@@ -8,7 +8,7 @@ const Intro = () => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 // const fileURL = window.URL.createObjectURL(blob);
-                const fileURL = 'https://drive.google.com/file/d/1xD6gip0uSkhNaHCaeKRp4rSI9FrvQn4n/view?usp=share_link'
+                const fileURL = 'https://drive.google.com/file/d/1_1LU6skOJehaMlo-l8OWfu4EKY5RkkAI/view?usp=share_link'
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;

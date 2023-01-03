@@ -12,12 +12,12 @@ const Header = () => {
       response.blob().then(blob => {
           // Creating new object of PDF file
           // const fileURL = window.URL.createObjectURL(blob);
-          const fileURL = 'https://drive.google.com/file/d/1t9Bly6dbgSVP-VUjHwrnpMnBil4XS8T2/view?usp=share_link'
+          const fileURL = 'https://drive.google.com/file/d/1_1LU6skOJehaMlo-l8OWfu4EKY5RkkAI/view?usp=share_link'
           // Setting various property values
           let alink = document.createElement('a');
           alink.href = fileURL;
           alink.target = '_blank';
-          alink.download = 'Loa.pdf';
+          alink.download = 'Internship_CV.pdf';
           alink.click();
       })
       setIsMenu(!isMenu)
