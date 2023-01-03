@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main {
   max-width: 1400px;
   margin: 0 auto;
@@ -27,25 +31,43 @@ body {
   z-index: 3;
 
   background-color: #10101a;
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: black;
+  width: 700px;
+  height: 100vh;
+  right: 0;
+  top: -25px;
+  padding: 100px;
+}
+
+.nav-links > * {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 80px;
+  font-size: 40px;
 }
 
 .intro_container {
   display: flex;
   justify-content: space-evenly;
   height: 50vh;
-  /* border: 1px solid red; */
-  width: 80%;
+  width: 900px;
   margin: 150px auto;
-  /* margin-bottom: 100px; */
+  margin-bottom: 70px;
 }
 
 .profile_image {
-  width: 25%;
+  width: 30%;
   height: 90%;
   border-radius: 20px;
   object-fit: contain;
-  /* border: 1px solid blue; */
 }
 
 .intro_brief {
@@ -53,11 +75,9 @@ body {
   padding: 40px 40px 40px 0px;
   font-size: 25px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* border: 1px solid blue; */
 }
 
 .resume_link {
-  /* border: 1px solid red; */
   left: 100px;
   top: 30px;
   position: relative;
@@ -89,19 +109,16 @@ body {
 .aboutMe_container{
   color: white;
   margin-bottom: 100px;
-  /* border: 1px solid blue; */
   text-align: center;
 }
 
 .education {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
 }
 
 .education_card {
   position: relative;
-  /* border: 1px solid grey; */
   width: 350px;
   height: 250px;
   margin: 20px;
@@ -110,11 +127,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  /* font-family: 'Courier New', Courier, monospace, sans-serif; */
-  /* align-items: center; */
   padding: 30px;
   background-color: #0c1017;
-  /* background-image: linear-gradient(to bottom right, #d19443, #aa670e); */
   font-size: 20px;
 }
 
@@ -128,7 +142,6 @@ body {
 }
 
 .experience {
-  /* border: 1px solid red; */
   width: 500px;
   margin: 50px auto;
   font-family: sans-serif;
@@ -150,22 +163,6 @@ body {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* .skills > p{
-  animation-duration: 3s;
-  animation-name: lalala;
-  
-}
-
-@keyframes lalala {
-  from {
-    margin-left: 100%;
-  }
-
-  to {
-    margin-left: 0%;
-  }
-} */
-
 .skills > p:hover{
   color: #59e96a;
   cursor: pointer;
@@ -175,7 +172,6 @@ body {
 .work_header{
   color: grey;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  /* border: 1px solid red; */
   width: 950px;
   margin: auto;
   margin-bottom: 50px;
@@ -184,12 +180,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-/* .education_icons {
-  position: absolute;
-  top: 20px ;
-  left: 20px;
-} */
 
 .work {
   color: white;
@@ -201,10 +191,8 @@ body {
 .project_card {
   color: white;
   background-image: linear-gradient(to bottom right, #191a24, #101019);
-  /* background-color: rgba(24,24,35,205); */
   border: 1px solid rgb(52, 52, 52);
   border-radius: 90px;
-  /* border: 1px solid blue; */
   width: 750px;
   height: 530px;
   display: flex;
@@ -259,8 +247,7 @@ body {
 }
 
 .project_description {
-  width: 40%;
-  /* border: 1px solid blue; */
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,7 +279,6 @@ body {
 }
 
 .social_links_container {
-  /* color: #51ca5f; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,7 +288,6 @@ body {
 }
 
 .social_links {
-  /* color: #51ca5f; */
   color: grey;
   display: flex;
   flex-direction: column;
@@ -310,18 +295,20 @@ body {
   justify-content: space-around;
 }
 
-.social_links > a {
-  /* color: #51ca5f; */
+.social_links > a, .footer_social_links > a {
   color: grey;
 }
 
-.social_links > a:hover {
+.social_links > a:hover{
   font-size: larger;
   color: #51ca5f;
 }
 
+.footer_social_links > a:hover {
+  color: #51ca5f;
+}
+
 .h-rule {
-  /* border: 1px solid #3e9d49; */
   border: 1px solid grey;
   width: 120px;
   transform: translateY(50px) rotate(90deg);
@@ -340,7 +327,6 @@ body {
 }
 
 .mail_link {
-  /* color: #59e96a; */
   color: grey;
   transform: translateY(50px) rotate(90deg); 
   text-decoration: none;
@@ -357,6 +343,105 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-@media only screen and (max-width: 650px){
- 
+.footer_social_links {
+  display: none;
+}
+
+@media only screen and (max-width: 1050px){
+
+  .social_links_container, .mail_link_section{
+    display: none;
+  }
+
+  .footer_social_links {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around; 
+  }
+
+  .footer_social_links > * {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .work_header {
+    width: 90%;
+  }
+
+  .work_title {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 800px;
+  }
+
+  .project_card {
+    margin-bottom: 50px;
+  }
+
+  .nav-links {
+    height: 100vh;
+    width: 50%;
+    font-size: 30px;
+    background-color: #0c1017;
+    right: -10px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .intro_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    width: 90%;
+    margin: 100px auto;
+  }
+  
+  .profile_image {
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+  }
+  
+  .intro_brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    padding: 40px 40px 40px 0px;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .job_role {
+    font-size: 1.3em;
+  }
+  
+  .resume_link {
+    left: 20px;
+    top: 20px;
+    position: relative;
+  }
+  
+  .cv-button{
+    width: 170px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 20px;
+    background: transparent;
+    color:#3e9d49;
+    border: 0.4px solid #3e9d49;
+    font-family: 'Courier New', Courier, monospace;
+  }
 }
