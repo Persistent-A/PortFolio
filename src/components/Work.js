@@ -51,20 +51,27 @@ const Work = () => {
     projects.map((pro) => console.log(pro.src))
     
   return (
-    <div className="work">
-      {projects.map((pro) =>
-      <div key={pro.alt}>
-        <ProjectCard 
-          src= {pro.src}
-          alt= {pro.alt}
-          p_name= {pro.p_name}
-          p_tools= {pro.p_tools}
-          web_link= {pro.web_link}
-          git_link= {pro.git_link}
-        />
-      </div> 
-      )}
-    </div>
+    <>
+      <div className="work_header">
+        <p className="work_title">Some Of My Implementations</p>
+        <hr style={{width: '40%', border: 'none', borderBottom: '1px solid grey', marginLeft: '20px', marginTop: '10px'}}/>
+      </div>
+      <div className="work">
+        {projects.map((pro) =>
+        <div key={pro.alt}>
+          <ProjectCard 
+            src= {pro.src}
+            alt= {pro.alt}
+            p_name= {pro.p_name}
+            p_tools= {pro.p_tools}
+            web_link= {pro.web_link}
+            git_link= {pro.git_link}
+          />
+        </div> 
+        )}
+      </div>
+    </>
+    
   )
 }
 

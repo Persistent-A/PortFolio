@@ -12,6 +12,7 @@ const Intro = () => {
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
+                alink.target = '_blank';
                 alink.download = 'Loa.pdf';
                 alink.click();
             })
@@ -19,13 +20,15 @@ const Intro = () => {
 }
     
   return (
-    <main style={{border: "1px solid blue"}} >
-        <img src={profile_image} alt="profile" />
-        <div>
+    <main style={{color: "white"}} className="intro_container">
+        <img src={profile_image} alt="profile" className="profile_image"/>
+        <div className="intro_brief">
             <p>Hi</p>
             <p>My name is <span> Apurva </span></p>
-            <p>Full Stack Developer</p>
-            <button onClick={onButtonClick}>Download CV</button>
+            <p className="job_role">Full Stack Developer</p>
+            <div className="resume_link">
+                <button onClick={onButtonClick} className="cv-button">Download CV</button>
+            </div>
         </div>
     </main>
   )

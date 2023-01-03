@@ -1,7 +1,8 @@
 const Mail = () => {
   return (
-    <div>
-        <a href="mailto:apurva.mili@gmail.com">apurva.mili@gmil.com</a>
+    <div className="mail_link_section">
+        <a href="mailto:apurva.mili@gmail.com" className="mail_link">apurva.mili@gmail.com</a>
+        <hr className="h-rule"/>
     </div>
   )
 }
