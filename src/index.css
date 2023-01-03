@@ -54,6 +54,16 @@ body {
   font-size: 40px;
 }
 
+.nav-links > *:hover {
+  cursor: pointer;
+  color: #3e9d49;
+}
+
+.menu_icon:hover {
+  cursor: pointer;
+  color: #3e9d49;
+}
+
 .intro_container {
   display: flex;
   justify-content: space-evenly;
@@ -165,8 +175,6 @@ body {
 
 .skills > p:hover{
   color: #59e96a;
-  cursor: pointer;
-
 }
 
 .work_header{

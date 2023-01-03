@@ -8,7 +8,7 @@ const Header = () => {
 
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('Loa.pdf').then(response => {
+    fetch('Internship_CV.pdf').then(response => {
       response.blob().then(blob => {
           // Creating new object of PDF file
           // const fileURL = window.URL.createObjectURL(blob);
@@ -28,7 +28,7 @@ const Header = () => {
     <header className="header">
         <p>Apurva</p>
         <div>
-          <HiBars3BottomRight onClick={(e) => setIsMenu(!isMenu)}/>
+          <HiBars3BottomRight onClick={(e) => setIsMenu(!isMenu)} className="menu_icon"/>
           {isMenu && <div className="nav-links">
             <TfiClose onClick={(e) => setIsMenu(!isMenu)}/>
             <a  href="#section2" onClick={(e) => setIsMenu(!isMenu)}>About</a>

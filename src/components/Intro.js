@@ -4,7 +4,7 @@ const Intro = () => {
 
     const onButtonClick = () => {
         // using Java Script method to get PDF file
-        fetch('Loa.pdf').then(response => {
+        fetch('Internship_CV.pdf').then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 // const fileURL = window.URL.createObjectURL(blob);
