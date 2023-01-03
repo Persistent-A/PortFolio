@@ -94,6 +94,7 @@ body {
 }
 
 .cv-button{
+  text-decoration: none;
   width: 170px;
   height: 40px;
   margin: 0 auto;
@@ -102,6 +103,7 @@ body {
   color:#3e9d49;
   border: 0.4px solid #3e9d49;
   font-family: 'Courier New', Courier, monospace;
+  padding: 15px;
 }
 
 .cv-button:hover {
