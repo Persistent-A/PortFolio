@@ -8,12 +8,12 @@ const Intro = () => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 // const fileURL = window.URL.createObjectURL(blob);
-                const fileURL = 'https://drive.google.com/file/d/10djxUg94XEsOyHx751zWfgGXSRiCqk7m/view?usp=sharing'
+                const fileURL = 'https://drive.google.com/file/d/1xD6gip0uSkhNaHCaeKRp4rSI9FrvQn4n/view?usp=share_link'
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
                 alink.target = '_blank';
-                alink.download = 'Loa.pdf';
+                alink.download = 'Internship_CV.pdf';
                 alink.click();
             })
     })

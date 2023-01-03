@@ -17,7 +17,10 @@ const Work = () => {
       p_name: 'Hospital Management System',
       p_tools: 'Redux, React, MongoDB, Express, Node JS, Material UI',
       web_link: 'https://hms-7lax.onrender.com',
-      git_link: 'https://github.com/Persistent-A/MERN'
+      git_link: 'https://github.com/Persistent-A/MERN',
+      description: <>  <p className="testcase">Test Case to login the doctor portal</p>
+      <p>Employee ID: 123</p>
+      <p>Password: test123</p></>
     },
     {
       src: require("../images/bookArena.png"),
@@ -26,7 +29,8 @@ const Work = () => {
       p_name: 'bookArena',
       p_tools: 'Python, Flask, HTML5, CSS3',
       web_link: 'https://bookarena-n44l.onrender.com',
-      git_link: 'https://github.com/Persistent-A/bookArena'
+      git_link: 'https://github.com/Persistent-A/bookArena',
+      description: <></>
     },
     {
       src: require("../images/weDesign.png"),
@@ -35,7 +39,8 @@ const Work = () => {
       p_name: 'WeDesign',
       p_tools: 'HTML5, CSS3, Javascript(ES6)',
       web_link: 'https://we-design.vercel.app/',
-      git_link: 'https://github.com/Persistent-A/WeDesign'
+      git_link: 'https://github.com/Persistent-A/WeDesign',
+      description: <></>
     },
     {
       src: require("../images/ttt.png"),
@@ -44,7 +49,8 @@ const Work = () => {
       p_name: 'Tic Tac Toe',
       p_tools: 'HTML5, CSS3, Javascript(ES6)',
       web_link: 'https://tic-tac-toe-tu3j.onrender.com',
-      git_link: 'https://github.com/Persistent-A/Tic_Tac_Toe'
+      git_link: 'https://github.com/Persistent-A/Tic_Tac_Toe',
+      description: <></>
     }
   ]
 
@@ -66,6 +72,7 @@ const Work = () => {
             p_tools= {pro.p_tools}
             web_link= {pro.web_link}
             git_link= {pro.git_link}
+            description = {pro.description}
           />
         </div> 
         )}
