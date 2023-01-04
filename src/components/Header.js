@@ -33,7 +33,7 @@ const Header = () => {
             <TfiClose onClick={(e) => setIsMenu(!isMenu)}/>
             <a  href="#section2" onClick={(e) => setIsMenu(!isMenu)}>About</a>
             <a  href="#section3" onClick={(e) => setIsMenu(!isMenu)}>Work</a>
-            <a href="https://github.com/Persistent-A/Resume/blob/main/Internship_CV.pdf" target="_blank" rel="noopener noreferrer" >Resume</a>
+            <a href="https://github.com/Persistent-A/Resume/raw/main/Internship_CV.pdf" target="_blank" rel="noopener noreferrer" >Resume</a>
           </div>}
         </div>
 
