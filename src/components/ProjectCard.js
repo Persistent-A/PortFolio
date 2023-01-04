@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
             <p className="project_tools">{props.p_tools}</p>
         </div>
         <a href={props.web_link} target="_blank" rel="noopener noreferrer" className="web_link">Visit Website <TbExternalLink /></a>
-        <div className="description">{props.description}</div>
+        {props.description && <div className="description">{props.description}</div>}
         <a href={props.git_link} target="_blank" rel="noopener noreferrer" className="web_link"> <AiOutlineGithub /> </a>
       </div>
     </div>

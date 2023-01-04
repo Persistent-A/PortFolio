@@ -30,7 +30,6 @@ const Work = () => {
       p_tools: 'Python, Flask, HTML5, CSS3',
       web_link: 'https://bookarena-n44l.onrender.com',
       git_link: 'https://github.com/Persistent-A/bookArena',
-      description: <></>
     },
     {
       src: require("../images/weDesign.png"),
@@ -40,7 +39,6 @@ const Work = () => {
       p_tools: 'HTML5, CSS3, Javascript(ES6)',
       web_link: 'https://we-design.vercel.app/',
       git_link: 'https://github.com/Persistent-A/WeDesign',
-      description: <></>
     },
     {
       src: require("../images/ttt.png"),
@@ -50,7 +48,6 @@ const Work = () => {
       p_tools: 'HTML5, CSS3, Javascript(ES6)',
       web_link: 'https://tic-tac-toe-tu3j.onrender.com',
       git_link: 'https://github.com/Persistent-A/Tic_Tac_Toe',
-      description: <></>
     }
   ]
 

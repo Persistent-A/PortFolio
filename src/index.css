@@ -276,6 +276,7 @@ body {
 .project_description > a:hover{
   color: #3e9d49;
   font-size: larger;
+  transition: all 0.3s;
 }
 
 .project_name {
