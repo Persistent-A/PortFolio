@@ -3,7 +3,6 @@ import profile_image from "../images/profile_image.jpg"
 const Intro = () => {
     
   return (
-    <>
     <main style={{color: "white"}} className="intro_container">
         <img src={profile_image} alt="profile" className="profile_image"/>
         <div className="intro_brief">
@@ -15,8 +14,6 @@ const Intro = () => {
             </div>
         </div>
     </main>
-    <div id="about"></div>
-    </>
     
   )
 }

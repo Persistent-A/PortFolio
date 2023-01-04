@@ -74,23 +74,23 @@ body {
 }
 
 .profile_image {
-  width: 30%;
+  width: 270px;
   height: 90%;
   border-radius: 20px;
   object-fit: contain;
 }
 
 .intro_brief {
-  width: 60%;
-  padding: 40px 40px 40px 0px;
+  /* border: 1px solid red; */
+  width: 55%;
+  padding: 40px 0px 40px 0px;
   font-size: 25px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .resume_link {
-  left: 100px;
-  top: 30px;
-  position: relative;
+  margin-top: 50px;
+  margin-left: 60px;
 }
 
 .cv-button{
@@ -115,7 +115,7 @@ body {
 
 .job_role {
   color: #fea28c;
-  font-size: 40px;
+  font-size: 1.5em;
 }
 
 .aboutMe_container{
@@ -133,7 +133,6 @@ body {
   position: relative;
   width: 350px;
   height: 250px;
-  margin: 20px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -387,15 +386,70 @@ body {
 @media only screen and (max-width: 950px) {
   .work_header {
     width: 90%;
+    justify-content: flex-start;
   }
 
   .work_title {
-    font-size: 0.8em;
+    font-size: 0.7em;
+  }
+
+  .intro_container {
+    width: 90%;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .App {
+
+  .header {
+    width: 90%;
+  }
+
+  .nav-links {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .footer_social_links {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around; 
+  }
+
+  .education {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience {
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .intro_container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .intro_brief {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  .resume_link {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .job_role {
+    margin: 8px 0;
+    font-size: 1.1em;
+  }
+
+  /* .App {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -412,11 +466,39 @@ body {
     font-size: 30px;
     background-color: #0c1017;
     right: -10px;
+  } */
+
+  .project_card {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    height: 400px;
+    padding: 30px 40px;
+  }
+
+  .project_image_section {
+    height: 340px;
+  }
+
+  .project_name {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .project_image_section {
+    display: none;
+  }
+
+  .project_card {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 }
 
 @media only screen and (max-width: 850px) {
-  .intro_container {
+  /* .intro_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -462,5 +544,5 @@ body {
     color:#3e9d49;
     border: 0.4px solid #3e9d49;
     font-family: 'Courier New', Courier, monospace;
-  }
+  } */
 }
