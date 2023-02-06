@@ -202,17 +202,17 @@ body {
   background-image: linear-gradient(to bottom right, #191a24, #101019);
   border: 1px solid rgb(52, 52, 52);
   border-radius: 90px;
-  width: 750px;
-  height: 530px;
+  width: 1000px;
+  height: 600px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 150px;
   padding: 50px 30px;
 }
 
 .project_image_section {
   width: 50%;
-  height: 420px;
+  height: 500px;
   position: relative;
 }
 
@@ -237,6 +237,7 @@ body {
 
 .text {
   color: white;
+  text-decoration: none;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -271,6 +272,12 @@ body {
   border: 1px solid grey;
   padding: 10px;
   border-radius: 10px;
+}
+.p_description{
+  color: grey;
+  font-family:  sans-serif;
+  font-size: 13px;
+  padding: 10px;
 }
 
 .project_description > a:hover{

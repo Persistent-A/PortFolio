@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import AboutMe from "./components/AboutMe";
 import Links from "./components/Links"
 import Mail from "./components/Mail"
+import SelfDescription from "./components/SelfDescription";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="main">
         <Header />
         <Intro />
+        <SelfDescription/>
         <AboutMe />
         <Work />
         <Footer />

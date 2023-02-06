@@ -15,6 +15,7 @@ const Work = () => {
       // src: "../images/hms.png",
       alt: 'hms',
       p_name: 'Hospital Management System',
+      p_description: 'Application is able to store  patient details in a database using MongoDB, which is used to book appointments in hospitals, further, those appointments are retrieved by respective field doctors to check for the schedules after logging in.',
       p_tools: 'Redux, React, MongoDB, Express, Node JS, Material UI',
       web_link: 'https://hms-7lax.onrender.com',
       git_link: 'https://github.com/Persistent-A/MERN',
@@ -27,6 +28,7 @@ const Work = () => {
       // src: "../images/bookArena.png",
       alt: 'bookArena',
       p_name: 'bookArena',
+      p_description: 'CRUD operations concerning information about books can be performed on the app. The app can be used to filter the books in the library based on price range.',
       p_tools: 'Python, Flask, HTML5, CSS3',
       web_link: 'https://bookarena-n44l.onrender.com',
       git_link: 'https://github.com/Persistent-A/bookArena',
@@ -36,6 +38,8 @@ const Work = () => {
       // src: "../images/weDesign.png",
       alt: 'we-design',
       p_name: 'WeDesign',
+      // p_description: 'Built a sample website having different layouts such as a carousel drawer.',
+      p_description: 'Employed DOM manipulation for the about and the services section of the website, enabling sliding tab and carousel effect respectively. Created the project section of the website with the help of flexbox.',
       p_tools: 'HTML5, CSS3, Javascript(ES6)',
       web_link: 'https://we-design.vercel.app/',
       git_link: 'https://github.com/Persistent-A/WeDesign',
@@ -45,6 +49,7 @@ const Work = () => {
       // src: "../images/ttt.png",
       alt: 'tic-tac-toe',
       p_name: 'Tic Tac Toe',
+      p_description: 'The game enables users to change player2 mode as well as player name change, beside these it also tracks the count of game played and draw count.',
       p_tools: 'HTML5, CSS3, Javascript(ES6)',
       web_link: 'https://tic-tac-toe-tu3j.onrender.com',
       git_link: 'https://github.com/Persistent-A/Tic_Tac_Toe',
@@ -66,6 +71,7 @@ const Work = () => {
             src= {pro.src}
             alt= {pro.alt}
             p_name= {pro.p_name}
+            p_description= {pro.p_description}
             p_tools= {pro.p_tools}
             web_link= {pro.web_link}
             git_link= {pro.git_link}
